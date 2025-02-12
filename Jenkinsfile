@@ -20,7 +20,7 @@ node {
 
         stage('Test') {
             echo "Running tests..."
-            sh "xcodebuild -project ${XCODE_PROJECT} -scheme ${XCODE_SCHEME} -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.2' test"
+            sh "xcodebuild -project ${XCODE_PROJECT} -scheme ${XCODE_SCHEME} -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.4' test"
         }
 
         stage('Archive & Export IPA') {
