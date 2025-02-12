@@ -19,7 +19,7 @@ node {
             // 安装 .p12 证书
             withCredentials([file(credentialsId: 'P12_FILE', variable: 'P12_FILE')]) {
                     sh '''
-                        security import ${P12_FILE} -k ~/Library/Keychains/login.keychain -P  -T /usr/bin/codesign
+                        security import ${P12_FILE} -k ~/Library/Keychains/login.keychain -T /usr/bin/codesign
                     '''
             }
     	}
