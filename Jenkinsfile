@@ -48,7 +48,7 @@ node {
         stage('Archive & Export IPA') {
             echo "Archiving the project and exporting IPA..."
             sh """
-            xcodebuild archive -project ${XCODE_PROJECT} -scheme ${XCODE_SCHEME} -configuration ${XCODE_CONFIGURATION} -archivePath ${WORKSPACE}/build/Pipeline-projects.xcarchive"
+            xcodebuild archive -project ${XCODE_PROJECT} -scheme ${XCODE_SCHEME} -configuration ${XCODE_CONFIGURATION} -archivePath ${WORKSPACE}/build/Pipeline-projects.xcarchive
             """
         }
 
