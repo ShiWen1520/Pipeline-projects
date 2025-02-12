@@ -17,14 +17,11 @@ node {
 
 	stage('Install Certificates') {
             // 安装 .p12 证书
-            sh '''
-            security import com.swyx.Pipeline-projects.p12 -k ~/Library/Keychains/login.keychain -T /usr/bin/codesign
-        	'''
-            // 安装 Provisioning Profile
-            sh '''
-            mkdir -p ~/Library/MobileDevice/Provisioning Profiles
-            cp YourProfile.mobileprovision ~/Library/MobileDevice/Provisioning Profiles/
-            '''
+            withCredentials([file(credentialsId: 'P12_FILE', variable: 'P12_FILE')]) {
+                    sh '''
+                        security import ${P12_FILE} -k ~/Library/Keychains/login.keychain -T /usr/bin/codesign
+                    '''
+            }
     	}
 
 	stage('Clean') {
