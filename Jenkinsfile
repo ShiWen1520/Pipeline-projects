@@ -18,9 +18,9 @@ node {
 	stage('Install Certificates') {
             // 安装 .p12 证书
             withCredentials([file(credentialsId: 'P12_FILE', variable: 'P12_FILE')]) {
-                    sh '''
-                        security import ${P12_FILE} -k ~/Library/Keychains/login.keychain -T /usr/bin/codesign
-                    '''
+                    sh """
+                    security import ${P12_FILE} -k ~/Library/Keychains/login.keychain -T /usr/bin/codesign
+                    """
             }
     	}
 
@@ -33,17 +33,23 @@ node {
 
         stage('Build') {
             echo "Building the project..."
-            sh "xcodebuild -project ${XCODE_PROJECT} -scheme ${XCODE_SCHEME} -configuration ${XCODE_CONFIGURATION} -sdk iphonesimulator build"
+            sh """
+            xcodebuild -project ${XCODE_PROJECT} -scheme ${XCODE_SCHEME} -configuration ${XCODE_CONFIGURATION} -sdk iphonesimulator build
+	    """
         }
 
         stage('Test') {
             echo "Running tests..."
-            sh "xcodebuild -project ${XCODE_PROJECT} -scheme ${XCODE_SCHEME} -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.4' test"
+            sh """
+            xcodebuild -project ${XCODE_PROJECT} -scheme ${XCODE_SCHEME} -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.4' test
+            """
         }
 
         stage('Archive & Export IPA') {
             echo "Archiving the project and exporting IPA..."
-            sh "xcodebuild -project ${XCODE_PROJECT} -scheme ${XCODE_SCHEME} -configuration ${XCODE_CONFIGURATION} -archivePath ${WORKSPACE}/build/Pipeline-projects.xcarchive CODE_SIGN_IDENTITY=${CODE_SIGN_IDENTITY} PROVISIONING_PROFILE=${PROVISIONING_PROFILE} archive"
+            sh """
+            xcodebuild archive -project ${XCODE_PROJECT} -scheme ${XCODE_SCHEME} -configuration ${XCODE_CONFIGURATION} -archivePath ${WORKSPACE}/build/Pipeline-projects.xcarchive CODE_SIGN_IDENTITY="${CODE_SIGN_IDENTITY}" PROVISIONING_PROFILE="${PROVISIONING_PROFILE}"
+            """
         }
 
         stage('Deploy to App Store Connect') {
