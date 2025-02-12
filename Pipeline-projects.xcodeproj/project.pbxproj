@@ -49,6 +49,7 @@
 		186C51722D5C5846009C12F2 /* Pipeline-projectsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pipeline-projectsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		186C51762D5C5846009C12F2 /* Pipeline_projectsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pipeline_projectsUITests.swift; sourceTree = "<group>"; };
 		186C51782D5C5846009C12F2 /* Pipeline_projectsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pipeline_projectsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		188D84132D5C7B9000BA936C /* Pipeline-projectsUITests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Pipeline-projectsUITests"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		186C51492D5C5844009C12F2 = {
 			isa = PBXGroup;
 			children = (
+				188D84132D5C7B9000BA936C /* Pipeline-projectsUITests */,
 				186C51542D5C5844009C12F2 /* Pipeline-projects */,
 				186C516B2D5C5846009C12F2 /* Pipeline-projectsTests */,
 				186C51752D5C5846009C12F2 /* Pipeline-projectsUITests */,
@@ -437,6 +439,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8N83MF6J6M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Pipeline-projects/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -464,6 +467,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8N83MF6J6M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Pipeline-projects/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -491,6 +495,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8N83MF6J6M;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
@@ -510,6 +515,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8N83MF6J6M;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
@@ -528,6 +534,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8N83MF6J6M;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.swyx.Pipeline-projectsUITests";
@@ -545,6 +552,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8N83MF6J6M;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.swyx.Pipeline-projectsUITests";
