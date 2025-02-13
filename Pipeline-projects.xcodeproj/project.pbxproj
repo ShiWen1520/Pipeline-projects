@@ -16,6 +16,16 @@
 		186C516D2D5C5846009C12F2 /* Pipeline_projectsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186C516C2D5C5846009C12F2 /* Pipeline_projectsTests.swift */; };
 		186C51772D5C5846009C12F2 /* Pipeline_projectsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186C51762D5C5846009C12F2 /* Pipeline_projectsUITests.swift */; };
 		186C51792D5C5846009C12F2 /* Pipeline_projectsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186C51782D5C5846009C12F2 /* Pipeline_projectsUITestsLaunchTests.swift */; };
+		188D84202D5DDE5D00BA936C /* CredientManage.png in Resources */ = {isa = PBXBuildFile; fileRef = 188D84162D5DDE5B00BA936C /* CredientManage.png */; };
+		188D84212D5DDE5D00BA936C /* Myproject-pipeline_Credient.png in Resources */ = {isa = PBXBuildFile; fileRef = 188D84172D5DDE5B00BA936C /* Myproject-pipeline_Credient.png */; };
+		188D84222D5DDE5D00BA936C /* Myproject-pipeline_Configure_pipeline.png in Resources */ = {isa = PBXBuildFile; fileRef = 188D84182D5DDE5B00BA936C /* Myproject-pipeline_Configure_pipeline.png */; };
+		188D84232D5DDE5D00BA936C /* Myproject-pipeline_Credient_Secretfile.png in Resources */ = {isa = PBXBuildFile; fileRef = 188D84192D5DDE5B00BA936C /* Myproject-pipeline_Credient_Secretfile.png */; };
+		188D84242D5DDE5D00BA936C /* Myproject-pipeline_Configure.png in Resources */ = {isa = PBXBuildFile; fileRef = 188D841A2D5DDE5C00BA936C /* Myproject-pipeline_Configure.png */; };
+		188D84252D5DDE5D00BA936C /* BlueOcean.png in Resources */ = {isa = PBXBuildFile; fileRef = 188D841B2D5DDE5C00BA936C /* BlueOcean.png */; };
+		188D84262D5DDE5D00BA936C /* Dashboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 188D841C2D5DDE5C00BA936C /* Dashboard.png */; };
+		188D84272D5DDE5D00BA936C /* SystemManage.png in Resources */ = {isa = PBXBuildFile; fileRef = 188D841D2D5DDE5C00BA936C /* SystemManage.png */; };
+		188D84282D5DDE5D00BA936C /* Dashboard_Myproject-pipeline.png in Resources */ = {isa = PBXBuildFile; fileRef = 188D841E2D5DDE5C00BA936C /* Dashboard_Myproject-pipeline.png */; };
+		188D84292D5DDE5D00BA936C /* New_item.png in Resources */ = {isa = PBXBuildFile; fileRef = 188D841F2D5DDE5D00BA936C /* New_item.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +60,16 @@
 		186C51762D5C5846009C12F2 /* Pipeline_projectsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pipeline_projectsUITests.swift; sourceTree = "<group>"; };
 		186C51782D5C5846009C12F2 /* Pipeline_projectsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pipeline_projectsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		188D84132D5C7B9000BA936C /* Pipeline-projectsUITests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Pipeline-projectsUITests"; sourceTree = "<group>"; };
+		188D84162D5DDE5B00BA936C /* CredientManage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CredientManage.png; sourceTree = "<group>"; };
+		188D84172D5DDE5B00BA936C /* Myproject-pipeline_Credient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Myproject-pipeline_Credient.png"; sourceTree = "<group>"; };
+		188D84182D5DDE5B00BA936C /* Myproject-pipeline_Configure_pipeline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Myproject-pipeline_Configure_pipeline.png"; sourceTree = "<group>"; };
+		188D84192D5DDE5B00BA936C /* Myproject-pipeline_Credient_Secretfile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Myproject-pipeline_Credient_Secretfile.png"; sourceTree = "<group>"; };
+		188D841A2D5DDE5C00BA936C /* Myproject-pipeline_Configure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Myproject-pipeline_Configure.png"; sourceTree = "<group>"; };
+		188D841B2D5DDE5C00BA936C /* BlueOcean.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueOcean.png; sourceTree = "<group>"; };
+		188D841C2D5DDE5C00BA936C /* Dashboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dashboard.png; sourceTree = "<group>"; };
+		188D841D2D5DDE5C00BA936C /* SystemManage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SystemManage.png; sourceTree = "<group>"; };
+		188D841E2D5DDE5C00BA936C /* Dashboard_Myproject-pipeline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dashboard_Myproject-pipeline.png"; sourceTree = "<group>"; };
+		188D841F2D5DDE5D00BA936C /* New_item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = New_item.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +121,7 @@
 		186C51542D5C5844009C12F2 /* Pipeline-projects */ = {
 			isa = PBXGroup;
 			children = (
+				188D84152D5DDDF200BA936C /* Pics */,
 				186C51552D5C5844009C12F2 /* AppDelegate.swift */,
 				186C51572D5C5844009C12F2 /* SceneDelegate.swift */,
 				186C51592D5C5844009C12F2 /* ViewController.swift */,
@@ -127,6 +148,23 @@
 				186C51782D5C5846009C12F2 /* Pipeline_projectsUITestsLaunchTests.swift */,
 			);
 			path = "Pipeline-projectsUITests";
+			sourceTree = "<group>";
+		};
+		188D84152D5DDDF200BA936C /* Pics */ = {
+			isa = PBXGroup;
+			children = (
+				188D841F2D5DDE5D00BA936C /* New_item.png */,
+				188D841C2D5DDE5C00BA936C /* Dashboard.png */,
+				188D841E2D5DDE5C00BA936C /* Dashboard_Myproject-pipeline.png */,
+				188D841A2D5DDE5C00BA936C /* Myproject-pipeline_Configure.png */,
+				188D84182D5DDE5B00BA936C /* Myproject-pipeline_Configure_pipeline.png */,
+				188D84172D5DDE5B00BA936C /* Myproject-pipeline_Credient.png */,
+				188D84192D5DDE5B00BA936C /* Myproject-pipeline_Credient_Secretfile.png */,
+				188D841D2D5DDE5C00BA936C /* SystemManage.png */,
+				188D84162D5DDE5B00BA936C /* CredientManage.png */,
+				188D841B2D5DDE5C00BA936C /* BlueOcean.png */,
+			);
+			path = Pics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,9 +271,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188D84252D5DDE5D00BA936C /* BlueOcean.png in Resources */,
+				188D84262D5DDE5D00BA936C /* Dashboard.png in Resources */,
+				188D84282D5DDE5D00BA936C /* Dashboard_Myproject-pipeline.png in Resources */,
+				188D84212D5DDE5D00BA936C /* Myproject-pipeline_Credient.png in Resources */,
 				186C51622D5C5846009C12F2 /* LaunchScreen.storyboard in Resources */,
 				186C515F2D5C5846009C12F2 /* Assets.xcassets in Resources */,
+				188D84272D5DDE5D00BA936C /* SystemManage.png in Resources */,
+				188D84242D5DDE5D00BA936C /* Myproject-pipeline_Configure.png in Resources */,
+				188D84232D5DDE5D00BA936C /* Myproject-pipeline_Credient_Secretfile.png in Resources */,
+				188D84222D5DDE5D00BA936C /* Myproject-pipeline_Configure_pipeline.png in Resources */,
+				188D84202D5DDE5D00BA936C /* CredientManage.png in Resources */,
 				186C515D2D5C5844009C12F2 /* Main.storyboard in Resources */,
+				188D84292D5DDE5D00BA936C /* New_item.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
