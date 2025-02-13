@@ -15,14 +15,14 @@ node {
 	    checkout scm
         }
 
-	stage('Install Certificates') {
+	//stage('Install Certificates') {
             // 安装 .p12 证书
-            withCredentials([file(credentialsId: 'P12_FILE', variable: 'P12_FILE')]) {
-                    sh """
-                    security import ${P12_FILE} -k ~/Library/Keychains/login.keychain -T /usr/bin/codesign
-                    """
-            }
-    	}
+            //withCredentials([file(credentialsId: 'P12_FILE', variable: 'P12_FILE')]) {
+                    //sh """
+                    //security import ${P12_FILE} -k ~/Library/Keychains/login.keychain -T /usr/bin/codesign
+                    //"""
+            //}
+    	//}
 
 	stage('Clean') {
             // 清理项目
@@ -44,13 +44,23 @@ node {
             xcodebuild -project ${XCODE_PROJECT} -scheme ${XCODE_SCHEME} -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.4' test
             """
         }
+	
+        // 这个命令需要手动管理证书,正在用的是自动管理证书方式
+	// xcodebuild archive -project ${XCODE_PROJECT} -scheme ${XCODE_SCHEME} -configuration ${XCODE_CONFIGURATION} -archivePath ${WORKSPACE}/build/Pipeline-projects.xcarchive CODE_SIGN_IDENTITY="${CODE_SIGN_IDENTITY}" PROVISIONING_PROFILE="${PROVISIONING_PROFILE}"
 
-        stage('Archive & Export IPA') {
+        stage('Archive') {
             echo "Archiving the project and exporting IPA..."
             sh """
             xcodebuild archive -project ${XCODE_PROJECT} -scheme ${XCODE_SCHEME} -configuration ${XCODE_CONFIGURATION} -archivePath ${WORKSPACE}/build/Pipeline-projects.xcarchive
             """
         }
+
+	stage('Export ipa') {
+	    echo "Export ipa..."
+	    sh """
+	    xcodebuild -exportArchive -archivePath ${WORKSPACE}/build/Pipeline-projects.xcarchive -exportPath /build -exportOptionsPlist ${EXPORT_PLIST_PATH}
+	    """
+	}
 
         stage('Deploy to App Store Connect') {
             echo "Deploying to App Store Connect using Fastlane..."
