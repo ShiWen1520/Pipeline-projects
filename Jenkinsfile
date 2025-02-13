@@ -58,7 +58,7 @@ node {
 	stage('Export ipa') {
 	    echo "Export ipa..."
 	    sh """
-	    xcodebuild -exportArchive -archivePath ${WORKSPACE}/build/Pipeline-projects.xcarchive -exportPath /build -exportOptionsPlist ${EXPORT_PLIST_PATH}
+	    xcodebuild -exportArchive -archivePath ${WORKSPACE}/build/Pipeline-projects.xcarchive -exportPath /build -exportOptionsPlist ${EXPORT_PLIST_PATH} -allowProvisioningUpdates
 	    """
 	}
 
