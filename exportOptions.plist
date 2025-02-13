@@ -17,5 +17,5 @@
     <!-- 表示采用自动签名方式 -->
     <key>signingStyle</key>
     <string>automatic</string>
-<dict/>
+</dict>
 </plist>
